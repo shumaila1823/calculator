@@ -17,10 +17,30 @@ Error handling: Manages invalid inputs and division by zero.
 
 Lightweight: No external libraries required; runs with core Python.
 
+🔬 Scientific Calculator Features:
+
+1.Trigonometric Functions: sin, cos, tan, cot, and their inverses.
+
+2.Logarithmic Functions: log, ln, antilog.
+
+3.Exponents and Roots: Powers (x^y), square root, nth root.
+
+4.Factorial: n! for combinatorics and permutations.
+
+5.Constants: π, e, and other mathematical constants.
+
+6.Memory Functions: Store, recall, and clear memory.
+
+7.Complex Numbers: Handle real and imaginary numbers (a + bi).
+
+8.Scientific Notation: Display and accept input in 1.23e+4 form.
+
+9.Unit Conversions: Length, mass, time, temperature, etc.
+
 ⚙️ How the Program Works
 Define the Class:
 
-A class Calculator is created with methods for each operation: add(), subtract(), multiply(), and divide().
+A class Calculator is created with methods for each operation: add(), subtract(), multiply(), and divide() etc.
 
 User Input:
 
