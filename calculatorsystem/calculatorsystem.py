@@ -1,3 +1,4 @@
+
 # ==========================================
 # Simple Calculator using Python Functions
 # Forked and Enhanced by Sania Irshad
@@ -5,6 +6,7 @@
 # ==========================================
 
 # Arithmetic operation functions
+
 def add(x, y):
     return x + y
 
@@ -28,22 +30,25 @@ def calculator():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
-    print("q. Quit")
 
+    print("5. Power")
+    print("6. Modulus")
+    print("Q. Quit")
+    
     while True:
-        choice = input("\nEnter choice (1/2/3/4 or q to quit): ").strip().lower()
-
-        if choice == 'q':
-            print("👋 Exiting calculator. Goodbye!")
+        choice = input("Enter choice (1/2/3/4/5/6 or Q to quit): ")
+        
+        if choice.lower() == 'Q':
+            print("Exiting calculator. Goodbye!")
             break
 
-        if choice not in ['1', '2', '3', '4']:
-            print("❌ Invalid input. Please choose 1-4 or 'q' to quit.")
+        if choice not in ['1', '2', '3', '4','5','6']:
+            print("Invalid input. Please choose 1-6 or 'Q' to quit.")
             continue
 
         try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            num1 = int(input("Enter first number: "))
+            num2 = int(input("Enter second number: "))
         except ValueError:
             print("❌ Please enter valid numeric values.")
             continue
@@ -58,9 +63,16 @@ def calculator():
             result = multiply(num1, num2)
             print(f"✅ Result: {num1} * {num2} = {result}")
         elif choice == '4':
-            result = divide(num1, num2)
-            print(f"✅ Result: {num1} / {num2} = {result}")
+            print(f"Result: {divide(num1, num2)}")
+        elif choice == '5':
+                result = power(num1, num2)
+                op = '^'
+        elif choice == '6':
+                result = modulus(num1, num2)
+                op = '%'
+        
+        else:
+            print("Invalid choice. Please try again.")
 
-# Run the calculator
 if __name__ == "__main__":
     calculator()
