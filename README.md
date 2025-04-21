@@ -1,21 +1,24 @@
-# calculator system
- Introduction:
-A calculator system is a basic tool used to perform arithmetic operations such as addition, subtraction, multiplication, and division. This project is a simple command-line calculator developed in Python using Object-Oriented Programming (OOP) with a class.
+# 🧮 Calculator System – Forked & Enhanced by Sania Irshad
 
-This calculator is designed to take user input for numbers and operations, process the input, and display the result. It runs continuously until the user chooses to quit the program.
+## 📌 Introduction
 
-⭐ Main Features
-User-friendly interface: Clear instructions are displayed to help users operate the calculator.
+This project is a fork of the original calculator system developed by **[Shumaila](https://github.com/shumaila1823)**. It is a simple command-line calculator created using **Python and Object-Oriented Programming (OOP)**. I have forked and enhanced this version to support my learning in Python and GitHub collaboration.
 
-Basic operations: Supports addition (+), subtraction (-), multiplication (*), and division (/).
+The calculator performs basic arithmetic operations and keeps running until the user decides to exit.
 
-Class-based structure: Makes the program organized and easy to understand.
+---
 
-Continuous execution: The program runs in a loop until the user quits.
+## ⭐ Features
 
-Error handling: Manages invalid inputs and division by zero.
+- ✅ User-friendly command-line interface
+- ➕ Basic operations: addition, subtraction, multiplication, division
+- 🧱 Organized class-based structure
+- 🔁 Continuous execution until user quits
+- ⚠️ Handles invalid input and division by zero
+- 🪶 Lightweight and runs with core Python (no external libraries)
 
-Lightweight: No external libraries required; runs with core Python.
+---
+
 
 🔬 Scientific Calculator Features:
 
@@ -42,38 +45,42 @@ Define the Class:
 
 A class Calculator is created with methods for each operation: add(), subtract(), multiply(), and divide() etc.
 
-User Input:
+2. The program:
+   - Asks the user for an operation (+, -, *, /, or `q` to quit)
+   - Accepts two numbers as input
+   - Executes the operation and shows the result
 
-The program asks the user to select an operation (+, -, *, /) or quit (q).
+3. The loop continues until the user types `q`.
 
-Then, it asks the user to enter two numbers.
+---
 
-Perform Operation:
+## 💡 Learning Outcomes
 
-Based on the selected operation, the corresponding method of the class is called.
+This project helped me understand:
+- ✅ Classes and object-oriented design in Python
+- ✅ Working with loops and conditionals
+- ✅ Handling user input and errors
+- ✅ Using GitHub: forking, editing, and version control
 
-The result is calculated and shown to the user.
+---
 
-Repeat or Quit:
+## 🚀 My Enhancements
 
-After displaying the result, the program asks for the next operation.
+- Rewrote and organized the README file
+- Improved code structure and usability
+- Practiced GitHub collaboration through forking and pull requests
 
-This continues until the user types 'q' to quit.
+---
 
-💡 Uses of the Calculator Program
-✅ Can be used for basic arithmetic calculations in a terminal.
+## 👩‍💻 About Me
 
- Great learning tool for beginners to understand:
+**Sania Irshad**  
+BS 4th Morning – Roll No: BSM-23-19  
+GitHub: [Sania1125](https://github.com/Sania1125)
 
-How classes and objects work in Python.
+---
 
-Taking input from users.
+## 🙏 Credit
 
-Using conditionals and loops.
-
-Implementing error handling.
-
-💻 Can be extended into a GUI or web-based calculator.
-
- Conclusion:
-This calculator system is a simple yet effective example of how Python can be used to build real-world tools using basic programming concepts. It introduces the concept of classes, user input handling, and control flow in a way that is easy for beginners to follow.
+Original project by **[Shumaila](https://github.com/shumaila1823)**  
+Forked and customized for learning and enhancement by **Sania Irshad**
