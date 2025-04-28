@@ -20,6 +20,11 @@ def divide(x, y):
     if y == 0:
         return "Error! Division by zero."
     return x / y
+def logarithm(x, base):
+    """Return log of x with specified base."""
+    if x <= 0 or base <= 0:
+        return "Error! Logarithm undefined for zero or negative numbers."
+    return math.log(x, base)
 
 # Main calculator function
 def calculator():
@@ -30,13 +35,13 @@ def calculator():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
-
     print("5. Power")
     print("6. Modulus")
+    print("7. Logarithm")
     print("Q. Quit")
     
     while True:
-        choice = input("Enter choice (1/2/3/4/5/6 or Q to quit): ")
+        choice = input("Enter choice (1/2/3/4/5/6/7 or Q to quit): ")
         
         if choice.lower() == 'Q':
             print("Exiting calculator. Goodbye!")
@@ -70,7 +75,13 @@ def calculator():
         elif choice == '6':
                 result = modulus(num1, num2)
                 op = '%'
-        
+        elif choice == '7':
+            try:
+                base = float(input("Enter base for logarithm (e.g., 10 or e=2.718...): "))
+                result = logarithm(num1, base)
+                print(f"✅ Result: log base {base} of {num1} = {result}")
+            except ValueError:
+                print("❌ Invalid base value.")
         else:
             print("Invalid choice. Please try again.")
 
