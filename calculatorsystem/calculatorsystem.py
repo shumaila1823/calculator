@@ -36,8 +36,11 @@ def logarithm(x, base):
 def sine(x):
     return math.sin(math.radians(x))
 
-def cosine(x):
-    return math.cos(math.radians(x))
+def factorial(x):
+    """Return the factorial of a number."""
+    if x < 0:
+        return "Error! Factorial is not defined for negative numbers."
+    return math.factorial(x) return math.cos(math.radians(x))
 
 def tangent(x):
     return math.tan(math.radians(x))
